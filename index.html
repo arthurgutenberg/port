@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arthur Gutenberg | Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #f4f4f4;
+            --text-color: #333;
+            --header-bg: #222;
+            --header-text: #fff;
+            --accent-color: #0077cc;
+            --card-bg: #fff;
+            --blockquote-bg: #f9f9f9;
+        }
+        body.dark-mode {
+            --bg-color: #121212;
+            --text-color: #e0e0e0;
+            --header-bg: #1f1f1f;
+            --header-text: #ffffff;
+            --accent-color: #3399ff;
+            --card-bg: #1e1e1e;
+            --blockquote-bg: #2c2c2c;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: all 0.3s ease;
+        }
+        header {
+            background-color: var(--header-bg);
+            color: var(--header-text);
+            padding: 30px 20px;
+            text-align: center;
+            position: relative;
+        }
+        nav {
+            background-color: var(--header-bg);
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: var(--header-text);
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: var(--accent-color);
+        }
+        .theme-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: var(--accent-color);
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .theme-toggle:hover {
+            background-color: #005fa3;
+        }
+        main {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: var(--card-bg);
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        section {
+            padding: 20px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        h2 {
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        ul li::before {
+            content: "\2022 ";
+            color: var(--accent-color);
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: var(--header-bg);
+            color: var(--header-text);
+            margin-top: 40px;
+        }
+        blockquote {
+            margin: 10px 0;
+            padding: 15px 20px;
+            border-left: 5px solid var(--accent-color);
+            font-style: italic;
+            background-color: var(--blockquote-bg);
+            border-radius: 5px;
+        }
+        cite {
+            display: block;
+            margin-top: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <button class="theme-toggle" onclick="toggleTheme()">Alternar Tema</button>
+    <header>
+        <h1>Arthur Gutenberg</h1>
+        <p>Estudante de Ciência da Computação</p>
+    </header>
+    <nav>
+        <a href="#biografia">Biografia</a>
+        <a href="#contato">Contato</a>
+        <a href="#formacao">Formação</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#idiomas">Idiomas</a>
+        <a href="#certificacoes">Certificações</a>
+        <a href="#testemunhos">Testemunhos</a>
+    </nav>
+    <main>
+        <section id="biografia">
+            <h2>Biografia</h2>
+            <p>Olá, eu sou o Arhtur Gutenberg! Sou estudante de Ciência da Computação e atualmente estou no primeiro semestre da graduação. Tenho interesse em áreas como desenvolvimento de software, lógica computacional e design de sistemas. Sou uma pessoa curiosa, dedicada e em constante busca por aprendizado e desafios que me ajudem a evoluir tanto academicamente quanto profissionalmente. Estou desenvolvendo meu portfólio com o objetivo de organizar minha trajetória e abrir portas para oportunidades de estágio e projetos na área da tecnologia.</p>
+        </section>
+        <section id="contato">
+            <h2>Informações de Contato</h2>
+            <ul>
+                <li>Email: arthurgutenberg1@gmail.com</li>
+                <li>Telefone: +55 61 984210000</li>
+                <li>GitHub: <a href="https://github.com/" target="_blank">github.com</a></li>
+            </ul>
+        </section>
+        <section id="formacao">
+            <h2>Formação Acadêmica</h2>
+            <ul>
+                <li>ENSINO MÉDIO: Colégio de exemplo - 2025</li>
+                <li>BACHARELADO: Faculdade de exemplo - 2025 - Cursando</li>
+            </ul>
+        </section>
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Liderança</li>
+                <li>Trabalho em equipe</li>
+                <li>Tomada de decisões</li>
+                <li>Boa comunicação</li>
+                <li>Inteligência emocional</li>
+                <li>Raciocínio Lógico</li>
+            </ul>
+        </section>
+        <section id="idiomas">
+            <h2>Idiomas</h2>
+            <ul>
+                <li>Português Brasileiro - Fluente</li>
+                <li>Inglês Americano - Fluente</li>
+                <li>Japonês - Intermediário</li>
+                <li>Espanhol - Iniciante</li>
+            </ul>
+        </section>
+        <section id="certificacoes">
+            <h2>Certificações</h2>
+            <ul>
+                <li>Curso de exemplo 1 - 2023 - 2024</li>
+                <li>Curso de exemplo 2 - 2023 - 2024</li>
+                <li>Curso de exemplo 3 - 2023 - 2024</li>
+                <li>Curso de exemplo 4 - 2023 - 2024</li>
+                <li>Curso de exemplo 5 - 2023 - 2024</li>
+                <li>Curso de exemplo 6 - 2023 - 2024</li>
+                <li>Curso de exemplo 7 - 2023 - 2024</li>
+                <li>Curso de exemplo 8 - 2023 - 2024</li>
+            </ul>
+        </section>
+        <section id="testemunhos">
+            <h2>Testemunhos</h2>
+            <blockquote>
+                "Trabalhar com o Arthur na Equipe de Mídia da IBS tem sido uma experiência inspiradora..."
+                <cite>— Ana Karolina</cite>
+            </blockquote>
+            <blockquote>
+                "O Arthur é um exemplo de disciplina, perseverança e respeito dentro e fora do tatame..."
+                <cite>— Mestre Wagner</cite>
+            </blockquote>
+            <blockquote>
+                "Desde que começamos o Ensino Médio, e agora que estamos na Faculdade o Arthur sempre se destacou..."
+                <cite>— Albert Pereira</cite>
+            </blockquote>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Arthur Gutenberg. Todos os direitos reservados.</p>
+    </footer>
+    <script>
+        function toggleTheme() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
+</body>
+</html>
